@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<section class="movie-card">
+				<div class="movie-card__heading">
+					<div>
+						<h1 class="movie__title">Star Wars: The Last Jedi</h1>
+						<p class="movie__category">Action & Adventure</p>
+					</div>
+					<p class="movie__score"><span>7.4 </span>/ 10</p>
+				</div>
+				<div class="movie-card__all">
+					<img
+						src="starwars-thelastjedi.jpg"
+						alt=""
+						class="img movie-card__image"
+					/>
+					<div class="movie-card__details">
+						<div>
+							<p class="bold">About the Movie</p>
+							<p class="movie__text">
+								The Last Jedi follows Rey as she seeks the aid of Luke Skywalker
+								in hopes of turning the tide for the Resistance in the fight
+								against Kylo Ren and the First Order while General Leia Organa,
+								Finn, and Poe Dameron attempt to escape a First Order attack on
+								the dwindling Resistance fleet.
+							</p>
+						</div>
+						<div class="movie-personel">
+							<div class="movie-personel__actors">
+								<p class="bold">Actors</p>
+								<ul>
+									<li>Mark Hamill</li>
+									<li>Carrie Fisher</li>
+									<li>Adam Driver</li>
+									<li>Daisy Ridley</li>
+									<li>John Boyega</li>
+									<a href="">More</a>
+								</ul>
+							</div>
+							<div class="movie-personel__team">
+								<p class="bold">Director</p>
+								<ul>
+									<li>Rian Johnson</li>
+								</ul>
+								<p class="bold">Screenwriter</p>
+								<ul>
+									<li>Rian Johnson</li>
+								</ul>
+							</div>
+							<div class="movie-personel__producers">
+								<p class="bold">Producers</p>
+								<ul>
+									<li>Kathleen Kennedy</li>
+									<li>Ram Bergman</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-card__cta">
+					<div>
+						<p class="bold">$19.00</p>
+						<button class="btn buy-btn">buy</button>
+					</div>
+					<button class="btn watch-btn">
+						watch trailer
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-player-play-filled"
+								width="25"
+								height="25"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#000"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="M0 0h24v24H0z" stroke="none" />
+								<path
+									d="M6 4v16a1 1 0 0 0 1.524.852l13-8a1 1 0 0 0 0-1.704l-13-8A1 1 0 0 0 6 4z"
+									fill="currentColor"
+									stroke="none"
+								/>
+							</svg>
+						</span>
+					</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
