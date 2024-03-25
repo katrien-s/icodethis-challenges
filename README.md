@@ -27,8 +27,8 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ![](screenshots/117-movie-card.jpg)
 
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/117-movie-card)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/117-movie-card)
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/117-movie-card)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/117-movie-card)
 
 ---
 
