@@ -1,0 +1,185 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-200: hsla(222, 100%, 98%, 1);
+	--clr-neutral-900: hsl(235, 54%, 17%);
+
+	--clr-accent-001: hsl(284, 100%, 87%);
+	--clr-accent-002: hsl(183, 78%, 82%);
+	--clr-accent-003: hsl(32, 100%, 86%);
+
+	/* font-sizes */
+	--fs-14px: 0.875rem;
+	--fs-15px: 0.9375rem;
+	--fs-16px: 1rem;
+	--fs-17px: 1.0625rem;
+	--fs-18px: 1.125rem;
+	--fs-19px: 1.1875rem;
+	--fs-20px: 1.25rem;
+	--fs-21px: 1.3125rem;
+	--fs-32px: 2rem;
+	--fs-36px: 2.25rem;
+	--fs-80px: 5rem;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	--ff-serif: 'Merriweather', serif;
+	--ff-sans-serif: 'Work Sans', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background: linear-gradient(172deg, #edbdff, #adf1f5, #ffdeb8, #f5f8ff);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 1% 0%;
+	}
+	50% {
+		background-position: 99% 100%;
+	}
+	100% {
+		background-position: 1% 0%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 1% 0%;
+	}
+	50% {
+		background-position: 99% 100%;
+	}
+	100% {
+		background-position: 1% 0%;
+	}
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-weight: 600;
+	line-height: 1.5;
+	font-size: var(--fs-16px);
+	color: var(--clr-neutral-900);
+	font-family: var(--ff-sans-serif);
+}
+
+h2 {
+	margin: 0;
+	font-weight: 400;
+	line-height: 1.3;
+	text-wrap: balance;
+	text-transform: capitalize;
+	font-size: var(--fs-32px);
+}
+
+main {
+	background-color: hsla(222, 100%, 98%, 0.5);
+	border: 15px solid var(--clr-neutral-100);
+	border-radius: 2rem;
+	padding: 2rem;
+	width: min(95vw, 900px);
+}
+
+.price-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 2rem;
+}
+
+.price-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 1.5rem;
+}
+
+.price-card__tier {
+	font-family: var(--ff-serif);
+	font-weight: 700;
+}
+
+.price-card__sum {
+	font-weight: 600;
+	font-size: var(--fs-36px);
+}
+
+.price-card__sum span {
+	font-size: var(--fs-80px);
+	line-height: 1;
+}
+
+.price-card__who-large {
+	font-size: var(--fs-20px);
+	line-height: 1.2;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: var(--clr-neutral-900);
+	background: var(--clr-primary-500);
+	border: transparent;
+	border-radius: 0.5rem;
+	padding: 0.75rem 1.75rem;
+	box-shadow: var(--shadow-1);
+	transition: all ease-in 0.5s;
+	text-transform: capitalize;
+	display: inline-block;
+	margin-top: auto;
+	width: max-content;
+}
+
+.btn.accent-1 {
+	background-color: var(--clr-accent-001);
+}
+
+.btn.accent-2 {
+	background-color: var(--clr-accent-002);
+}
+
+.btn.accent-3 {
+	background-color: var(--clr-accent-003);
+}
+
+.btn:hover {
+	background: var(--clr-neutral-900);
+	box-shadow: var(--shadow-3);
+}
+
+.btn.accent-1:hover {
+	color: var(--clr-accent-001);
+}
+
+.btn.accent-2:hover {
+	color: var(--clr-accent-002);
+}
+
+.btn.accent-3:hover {
+	color: var(--clr-accent-003);
+}

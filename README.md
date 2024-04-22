@@ -23,6 +23,18 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 118
+
+![](screenshots/118-pricing-table.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/118-pricing-table)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/118-pricing-table)
+
+**Useful Resources**
+For the animation of the background, I used [gradient-animator](https://www.gradient-animator.com/)
+
+---
+
 ### Challenge 117
 
 ![](screenshots/117-movie-card.jpg)
