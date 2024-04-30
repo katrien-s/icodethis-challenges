@@ -31,7 +31,7 @@ Unless noted otherwise, the building of the exercises is done with:
 - [Live URL](https://graficdoctor.github.io/icodethis-challenges/118-pricing-table)
 
 **Useful Resources**
-For the animation of the background, I used [gradient-animator](https://www.gradient-animator.com/)
+- For the animation of the background, I used [gradient-animator](https://www.gradient-animator.com/)
 
 ---
 
