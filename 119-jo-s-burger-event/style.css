@@ -112,7 +112,6 @@ ul {
 .wrapper {
 	width: min(95vw, 1440px);
 	margin-inline: auto;
-	outline: 1px solid blue;
 }
 
 header {
@@ -170,6 +169,27 @@ header {
 .burger-card {
 	background-color: var(--clr-neutral-100);
 	max-width: 335px;
+  position: relative;
+}
+
+.star-new {
+  position: absolute;
+  top: -50px;
+  right: -25px;
+  z-index: 1;
+  width: 107px;
+}
+
+.star-new__text {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-transform: uppercase;
+  color: var(--clr-primary-400);
+  font-weight: 600;
+  font-size: var(--fs-20px);
+  transform: rotate(15deg);
+  z-index: 2;
 }
 
 .burger-card__text {
@@ -191,6 +211,15 @@ header {
 	.menu {
 		padding-block: 160px;
 	}
+
+  .star-new {
+    width: 128px;
+}
+
+.star-new__text {
+  right: 20px;
+  font-size: var(--fs-24px);
+}
 }
 
 /* Buttons */
