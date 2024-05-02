@@ -245,6 +245,7 @@ header {
 		'avatar name'
 		'. text';
 	gap: 16px;
+  row-gap: unset;
 }
 
 .user-avatar {
@@ -273,8 +274,10 @@ header {
 	grid-area: text;
 }
 
-.user-text + .user-text {
-  margin-top: 64px;
+.user-text br {
+  display: block;
+  content: '';
+  margin-top: 16px;
 }
 
 @media (min-width: 40em) {
