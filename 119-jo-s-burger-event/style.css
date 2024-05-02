@@ -145,16 +145,14 @@ header {
 	height: auto;
 }
 
-.hero-img {
-}
-
 @media (min-width: 60em) {
 	.grid-image {
 		max-width: 500px;
 	}
 }
 
-.menu {
+.menu,
+.reviews {
 	padding-block: 80px;
 }
 
@@ -169,27 +167,27 @@ header {
 .burger-card {
 	background-color: var(--clr-neutral-100);
 	max-width: 335px;
-  position: relative;
+	position: relative;
 }
 
 .star-new {
-  position: absolute;
-  top: -50px;
-  right: -25px;
-  z-index: 1;
-  width: 107px;
+	position: absolute;
+	top: -50px;
+	right: -25px;
+	z-index: 1;
+	width: 107px;
 }
 
 .star-new__text {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  text-transform: uppercase;
-  color: var(--clr-primary-400);
-  font-weight: 600;
-  font-size: var(--fs-20px);
-  transform: rotate(15deg);
-  z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	text-transform: uppercase;
+	color: var(--clr-primary-400);
+	font-weight: 600;
+	font-size: var(--fs-20px);
+	transform: rotate(15deg);
+	z-index: 2;
 }
 
 .burger-card__text {
@@ -212,14 +210,89 @@ header {
 		padding-block: 160px;
 	}
 
-  .star-new {
-    width: 128px;
+	.star-new {
+		width: 128px;
+	}
+
+	.star-new__text {
+		right: 20px;
+		font-size: var(--fs-24px);
+	}
 }
 
-.star-new__text {
-  right: 20px;
-  font-size: var(--fs-24px);
+.review-cards {
+	--gap: 16px;
+	columns: min(95vw, 320px);
+	gap: var(--gap);
+	width: 100%;
+	margin: 5rem auto;
 }
+
+.review-cards > * {
+	break-inside: avoid;
+	margin-bottom: var(--gap);
+}
+
+.review-card {
+	background-color: var(--clr-neutral-100);
+	padding: 20px;
+	display: flex;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-areas:
+		'avatar name'
+		'. text';
+	gap: 16px;
+}
+
+.user-avatar {
+	grid-area: avatar;
+}
+
+.user-avatar img {
+	border-radius: 100%;
+	width: 32px;
+	height: 32px;
+}
+
+.user-name {
+	font-size: 0.875rem;
+	font-size: clamp(0.875rem, 0.74rem + 0.56vw, 1.25rem);
+	font-weight: 600;
+	text-transform: uppercase;
+	grid-area: name;
+	display: flex;
+	align-items: center;
+}
+
+.user-text {
+	font-size: var(--fs-16px);
+	font-weight: 400;
+	grid-area: text;
+}
+
+.user-text + .user-text {
+  margin-top: 64px;
+}
+
+@media (min-width: 40em) {
+	.review-card {
+		padding: 24px;
+	}
+
+	.user-avatar img {
+		width: 48px;
+		height: 48px;
+	}
+
+}
+
+@media (min-width: 65em) {
+	.review-cards {
+		columns: 435px;
+	}
 }
 
 /* Buttons */
@@ -271,4 +344,5 @@ header {
 
 .max-width-800 {
 	max-width: 800px;
+	text-wrap: balance;
 }
