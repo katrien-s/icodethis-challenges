@@ -299,21 +299,24 @@ footer section {
 }
 
 .image-grid {
+	max-width: 1440px;
+	margin-inline: auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(2, minmax(150px, 1fr));
 }
 
 .action-text {
 	display: flex;
 	align-items: center;
-	padding: 30px;
+	padding: 1.5em;
 }
 
 .action-text__ct {
-	font-size: 1.6875rem;
-	font-size: clamp(1.6875rem, 1.36rem + 1.41vw, 2.625rem);
+	font-size: 1.6rem;
+	font-size: clamp(1.6rem, 1.36rem + 1.41vw, 2.625rem);
 	text-transform: uppercase;
 	font-weight: 600;
+	margin-inline: auto;
 }
 
 .footer-logo {
@@ -330,8 +333,7 @@ footer form {
 	gap: 1rem;
 }
 
-form input,
-form button {
+form > * {
 	width: 100%;
 }
 
@@ -342,16 +344,22 @@ form input {
 	font-family: inherit;
 	padding: 16px;
 	font-size: var(--fs-16px);
+	height: 60px;
 }
 
 form input::placeholder {
 	opacity: 1;
 }
 
+footer nav {
+	grid-area: navigation;
+}
+
 .footer-main-navigation {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 32px;
 	padding-block: 64px;
 }
@@ -368,6 +376,74 @@ form input::placeholder {
 	.footer-logo {
 		width: 308px;
 		height: 82px;
+		margin-bottom: 40px;
+	}
+
+	footer form {
+		flex-direction: row;
+		gap: unset;
+		max-width: 545px;
+	}
+
+	form input {
+		text-align: left;
+	}
+
+	form button {
+		width: max-content;
+	}
+}
+
+@media (min-width: 35.9em) {
+	.image-grid {
+		grid-template-columns: repeat(4, minmax(150px, 288px));
+	}
+
+  .action-text {
+    padding: 16px;
+  }
+
+  .action-text__ct {
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 35.9em) and (max-width: 37.5em) {
+  .action-text__ct {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 60em) {
+	.image-grid {
+		grid-template-columns: repeat(5, minmax(150px, 288px));
+	}
+
+  .action-text__ct {
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 65.6em) {
+	.footer-cta {
+		display: grid;
+		grid-template-columns: minmax(600px, 1fr) 1fr minmax(370px, 1fr);
+		grid-template-areas: 'newsletter . navigation';
+	}
+
+	.newsletter-cta {
+		grid-area: newsletter;
+	}
+
+	.footer-main-navigation {
+		flex-direction: row;
+		padding-top: 52px;
+	}
+
+	.footer-legal-navigation {
+		text-align: left;
+		justify-content: start;
+		margin-top: 80px;
 	}
 }
 
@@ -447,7 +523,7 @@ footer .btn {
 	width: 1px;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 60em) {
 	.hidden-on-mobile {
 		display: none;
 	}
