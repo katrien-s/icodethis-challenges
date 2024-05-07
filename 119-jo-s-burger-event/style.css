@@ -626,3 +626,69 @@ footer .btn {
 		display: none;
 	}
 }
+
+/* Animation */
+
+.marquee-section {
+  margin-block: 100px;
+  position: relative;
+}
+
+.marquee {
+	--gap: 1rem;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	gap: var(--gap);
+	background-color: var(--clr-accent-400);
+	padding: 0.25rem;
+	transform: rotate(-2.5deg);
+}
+
+.marquee.bottom {
+	transform: rotate(2.5deg);
+  position: absolute;
+  top: 5px;
+}
+
+.marquee__content {
+	font-size: 1rem;
+	font-size: clamp(1rem, 0.75rem + 1.05vw, 1.5rem);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--clr-primary-400);
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	min-width: 100%;
+	gap: var(--gap);
+	animation: scroll 25s linear infinite;
+}
+
+.marquee.top .marquee__content {
+	animation-name: scroll-opposite;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+@keyframes scroll-opposite {
+	from {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.marquee__content {
+		animation-play-state: paused !important;
+	}
+}
