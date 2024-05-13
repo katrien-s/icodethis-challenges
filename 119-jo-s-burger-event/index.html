@@ -14,77 +14,62 @@
 		<script src="app.js" defer></script>
 	</head>
 	<body>
-		<!-- <header class="primary-background">
-			<div class="wrapper | flex-center-sb">
-				<img src="/images/logo-jo.svg" class="img logo" />
-				<button type="button" class="btn nav-btn" id="closeNav">
+		<div class="primary-background">
+			<nav class="wrapper" id="nav">
+				<p class="logo">Jo's&copy;</p>
+				<button class="menu-btn" id="menu-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-x"
-						width="28"
-						height="28"
+						width="24"
+						height="24"
 						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="#000000"
 						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
 					>
 						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M18 6l-12 12" />
-						<path d="M6 6l12 12" />
+						<path class="line top-line" d="M4 6l16 0" />
+						<path class="line middle-line" d="M4 12l16 0" />
+						<path class="line bottom-line" d="M4 18l16 0" />
 					</svg>
 				</button>
-				<nav class="overlay-mobile" id="headerNav">
-					<ul class="nav-list">
-						<li class="nav-list__item"><a href="#about">about</a></li>
-						<li class="nav-list__item"><a href="#menu">menu</a></li>
-						<li class="nav-list__item"><a href="#reviews">reviews</a></li>
-						<li class="nav-list__item"><a href="#social">social</a></li>
-					</ul>
-				</nav>
-				<button type="button" class="btn nav-btn" id="openNav">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-menu-2"
-						width="28"
-						height="28"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="#000000"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M4 6l16 0" />
-						<path d="M4 12l16 0" />
-						<path d="M4 18l16 0" />
-					</svg>
-				</button>
-			</div>
-		</header> -->
-		<main>
-			<section class="hero | primary-background">
-				<div class="wrapper | two-column-grid">
-					<div class="hero-text">
-						<h1>NEW YORK’S FAVORITE BURGER</h1>
-						<p>
-							In a world so painfully serious, yet so ridiculous, you knew it
-							was only a matter of time before plant-based steak became a thing.
-						</p>
-						<button type="button" class="btn">Browse Menu</button>
-					</div>
-					<div class="grid-image">
-						<!-- <img
-							src="https://icodethis.com/images/jos_burger/burger_1.jpg"
-							alt=""
-							class="hero-img"
-						/> -->
-					</div>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Social</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="primary-background">
+			<header class="wrapper">
+				<div>
+					<h1>NEW YORK’S FAVORITE BURGER</h1>
+					<p class="text-lg">
+						In a world so painfully serious, yet so ridiculous, you knew it was
+						only a matter of time before plant-based steak became a thing.
+					</p>
+					<img
+						src="https://icodethis.com/images/jos_burger/burger_1.jpg"
+						alt="Burger"
+						class="mobile-img img"
+					/>
+					<a href="#" class="btn">Browse Menu</a>
 				</div>
-			</section>
-			<section class="creator-food wrapper">
+				<img
+					src="https://icodethis.com/images/jos_burger/burger_1.jpg"
+					alt="Burger"
+					class="header-img"
+				/>
+			</header>
+		</div>
+
+		<main>
+			<section class="creator-food">
 				<article class="creator | wrapper">
 					<h2 class="max-width-970">
 						Hi, We’re Jo’s Burgers, a collective of creators who Love burger and
@@ -103,211 +88,211 @@
 				</article>
 
 				<section class="marquee-section">
-          <div class="marquee top">
-            <ul class="marquee__content">
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <ul class="marquee__content" aria-hidden="true">
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="marquee bottom">
-            <ul class="marquee__content">
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <ul class="marquee__content" aria-hidden="true">
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-              <li>Life is too short to eat just salads</li>
-              <li>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 150 150"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="150" height="150" fill="none" />
-                  <path
-                    d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-                    fill="var(--clr-primary-400)"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </section>
+					<div class="marquee top">
+						<ul class="marquee__content">
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+						</ul>
+						<ul class="marquee__content" aria-hidden="true">
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="marquee bottom">
+						<ul class="marquee__content">
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+						</ul>
+						<ul class="marquee__content" aria-hidden="true">
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+							<li>Life is too short to eat just salads</li>
+							<li>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="150" height="150" fill="none" />
+									<path
+										d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+										fill="var(--clr-primary-400)"
+									/>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</section>
 
 				<article class="food | wrapper">
 					<div>
