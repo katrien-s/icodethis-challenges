@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sync Component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<section>
+				<h1>Stay in sync, no matter where you go</h1>
+				<p>
+					Keep up with the conversation with our apps for <a>iPhone</a> and
+					<a>Android</a>.
+				</p>
+				<p>We can text you a quick download link to get you started!</p>
+				<form action="">
+					<select name="code" id="code">
+						<option disabled>Select a code</option>
+						<option value="32">Belgium +32</option>
+						<option value="33">France +33</option>
+						<option value="49">Germany +49</option>
+						<option value="39">Italy +39</option>
+						<option value="40" selected>Romania +40</option>
+						<option value="34">Spain +34</option>
+						<option value="44">UK +44</option>
+						<option value="1">US +1</option>
+					</select>
+					<label for="phone" class="sr-only">Enter your phone number</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						placeholder="Enter your phone number"
+						required
+					/>
+					<button type="submit" class="btn">Send Link</button>
+				</form>
+				<p class="text-small">
+					Looking for the <a>Windows</a> or <a>Linux</a> desktop apps?
+				</p>
+			</section>
+			<div class="image-box">
+				<img src="/images/sync-component.svg" alt="" class="img" />
+			</div>
+		</main>
+	</body>
+</html>

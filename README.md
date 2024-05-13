@@ -23,6 +23,24 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 120
+
+![](screenshots/120-sync-component.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/120-sync-component)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/120-sync-component)
+
+---
+
+### Challenge 119 (unfinished)
+
+![](screenshots/119-jo-s-burger-event.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/119-jo-s-burger-event)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/119-jo-s-burger-event)
+
+---
+
 ### Challenge 118
 
 ![](screenshots/118-pricing-table.jpg)
@@ -31,6 +49,7 @@ Unless noted otherwise, the building of the exercises is done with:
 - [Live URL](https://graficdoctor.github.io/icodethis-challenges/118-pricing-table)
 
 **Useful Resources**
+
 - For the animation of the background, I used [gradient-animator](https://www.gradient-animator.com/)
 
 ---
