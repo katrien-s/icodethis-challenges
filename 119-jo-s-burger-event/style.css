@@ -115,19 +115,19 @@ header {
 	position: relative;
 }
 
-nav {
+.header-main-navigation {
 	display: flex;
 	justify-content: space-between;
 }
 
-nav ul {
+.nav-list {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 	background-color: var(--clr-primary-400);
 }
 
-nav ul a {
+.nav-list__item a {
 	color: var(--clr-neutral-900);
 	font-weight: 600;
 	font-size: var(--fs-24px);
@@ -135,7 +135,7 @@ nav ul a {
 	transition: color 0.2s;
 }
 
-nav a:hover {
+.nav-list__item a:hover {
 	color: var(--clr-neutral-100);
 }
 
@@ -200,12 +200,12 @@ h1 {
 		display: none;
 	}
 
-  .hero-svg {
-    top: 7.5rem;
-    left: 65%;
-    width: 80px;
-    height: 80px;
-  }
+	.hero-svg {
+		top: 7.5rem;
+		left: 65%;
+		width: 80px;
+		height: 80px;
+	}
 }
 
 @media (max-width: 40em) {
@@ -223,7 +223,7 @@ h1 {
 		justify-content: center;
 	}
 
-	nav ul {
+	.header-main-navigation .nav-list {
 		flex-direction: column;
 		gap: 2rem;
 		min-height: 100vh;
@@ -246,25 +246,25 @@ h1 {
 		display: none;
 	}
 
-	nav.open ul {
+	.header-main-navigation.open .nav-list {
 		scale: 1;
 	}
 
-	nav.open .menu-btn .line {
+	.header-main-navigation.open .menu-btn .line {
 		transition: rotate 0.3s linear, opacity 0.3s linear;
 		transform-origin: left center;
 	}
 
-	nav.open .menu-btn .top-line {
+	.header-main-navigation.open .menu-btn .top-line {
 		rotate: 45deg;
 		translate: 0 -4px;
 	}
 
-	nav.open .menu-btn .middle-line {
+	.header-main-navigation.open .menu-btn .middle-line {
 		opacity: 0;
 	}
 
-	nav.open .menu-btn .bottom-line {
+	.header-main-navigation.open .menu-btn .bottom-line {
 		rotate: -45deg;
 		translate: 0 4px;
 	}
@@ -623,6 +623,11 @@ footer nav {
 	.action-text__ct {
 		line-height: 1.1;
 	}
+
+  	.footer-main-navigation {
+		flex-direction: row;
+		padding-top: 52px;
+	}
 }
 
 @media (min-width: 35em) and (max-width: 37.5em) {
@@ -656,11 +661,6 @@ footer nav {
 		grid-area: newsletter;
 	}
 
-	.footer-main-navigation {
-		flex-direction: row;
-		padding-top: 52px;
-	}
-
 	.footer-legal-navigation {
 		text-align: left;
 		justify-content: start;
@@ -692,12 +692,11 @@ footer nav {
 }
 
 .hero .btn {
-  margin-top: 48px;
+	margin-top: 48px;
 }
 
 footer .btn {
 	padding-block: 12px;
-  margin-bottom: 64px;
 }
 
 @media (min-width: 40em) {
@@ -705,6 +704,7 @@ footer .btn {
 		display: none;
 	}
 }
+
 
 /* Utility */
 
