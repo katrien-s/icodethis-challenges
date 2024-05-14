@@ -14,9 +14,9 @@
 		<script src="app.js" defer></script>
 	</head>
 	<body>
-		<div class="primary-background">
-			<nav class="wrapper" id="nav">
-				<p class="logo">Jo's&copy;</p>
+		<header class="wrapper">
+			<p class="logo">Jo's<sup class="copyright">&copy;</sup></p>
+			<nav id="nav">
 				<button class="menu-btn" id="menu-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -41,15 +41,17 @@
 					<li><a href="#">Menu</a></li>
 					<li><a href="#">Reviews</a></li>
 					<li><a href="#">Social</a></li>
+					<img src="/images/smiley-vote.svg" alt="" class="mobile-svg" />
 				</ul>
 			</nav>
-		</div>
+		</header>
 
-		<div class="primary-background">
-			<header class="wrapper">
+		<main>
+			<section class="hero wrapper">
 				<div>
-					<h1>NEW YORK’S FAVORITE BURGER</h1>
-					<p class="text-lg">
+					<h1 class="max-width-800">NEW YORK’S FAVORITE BURGER</h1>
+					<img src="/images/smiley-vote.svg" class="hero-svg" alt="" />
+					<p class="max-width-800">
 						In a world so painfully serious, yet so ridiculous, you knew it was
 						only a matter of time before plant-based steak became a thing.
 					</p>
@@ -63,13 +65,10 @@
 				<img
 					src="https://icodethis.com/images/jos_burger/burger_1.jpg"
 					alt="Burger"
-					class="header-img"
+					class="hero-img"
 				/>
-			</header>
-		</div>
-
-		<main>
-			<section class="creator-food">
+			</section>
+			<section class="creator-food | primary-100-background">
 				<article class="creator | wrapper">
 					<h2 class="max-width-970">
 						Hi, We’re Jo’s Burgers, a collective of creators who Love burger and
@@ -313,180 +312,218 @@
 					</div>
 				</article>
 			</section>
-			<section class="menu wrapper">
-				<h2>our burgers</h2>
-				<p class="primary-color max-width-800">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat.
-				</p>
-				<ul class="burger-cards">
-					<li class="burger-card">
-						<img
-							src="https://icodethis.com/images/jos_burger/burger_1.jpg"
-							alt=""
-							class="img burger-card__img"
-						/>
-						<div class="burger-card__text">
-							<p class="burger-card__type">Shrimp Yo!</p>
-							<p class="burger-card__description">
-								Grilled shrimp burger with coleslaw in a homemade fluffy bun
-							</p>
-						</div>
-						<svg
-							width="128"
-							height="128"
-							viewBox="0 0 150 150"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="star-new"
-						>
-							<rect width="150" height="150" fill="none" />
-							<path
-								d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
-								fill="#EEF866"
+			<section class="menu | primary-100-background">
+				<article class="wrapper">
+					<h2>our burgers</h2>
+					<p class="primary-color max-width-800">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.
+					</p>
+					<ul class="burger-cards">
+						<li class="burger-card">
+							<img
+								src="https://icodethis.com/images/jos_burger/burger_1.jpg"
+								alt=""
+								class="img burger-card__img"
 							/>
-						</svg>
-						<p class="star-new__text">new</p>
-					</li>
-					<li class="burger-card">
-						<img
-							src="https://icodethis.com/images/jos_burger/burger_2.jpg"
-							alt=""
-							class="img burger-card__img"
-						/>
-						<div class="burger-card__text">
-							<p class="burger-card__type">Double Trouble</p>
-							<p class="burger-card__description">
-								Angus Beef burger with Gouda cheese and bacon in a sesame bun.
-							</p>
-						</div>
-					</li>
-					<li class="burger-card">
-						<img
-							src="https://icodethis.com/images/jos_burger/burger_3.jpg"
-							alt=""
-							class="img burger-card__img"
-						/>
-						<div class="burger-card__text">
-							<p class="burger-card__type">Juicy Jo</p>
-							<p class="burger-card__description">
-								Beef Burger with fried onion toped with ragu sauce in a rye bun.
-							</p>
-						</div>
-					</li>
-					<li class="burger-card">
-						<img
-							src="https://icodethis.com/images/jos_burger/burger_4.jpg"
-							alt=""
-							class="img burger-card__img"
-						/>
-						<div class="burger-card__text">
-							<p class="burger-card__type">Crispy Chi</p>
-							<p class="burger-card__description">
-								Beef Burger with fried onion toped with ragu sauce in a rye bun.
-							</p>
-						</div>
-					</li>
-				</ul>
+							<div class="burger-card__text">
+								<p class="burger-card__type">Shrimp Yo!</p>
+								<p class="burger-card__description">
+									Grilled shrimp burger with coleslaw in a homemade fluffy bun
+								</p>
+							</div>
+							<svg
+								width="128"
+								height="128"
+								viewBox="0 0 150 150"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="star-new"
+							>
+								<rect width="150" height="150" fill="none" />
+								<path
+									d="M75.0032 1L92.3672 29.4325L123.954 18.8068L118.972 51.7497L150 63.9043L125.001 85.936L140.956 115.187L107.637 115.999L101.049 148.656L75.0032 127.874L48.9507 148.656L42.363 115.999L9.04379 115.187L24.9989 85.936L0 63.9043L31.0281 51.7497L26.0461 18.8068L57.6391 29.4325L75.0032 1Z"
+									fill="#EEF866"
+								/>
+							</svg>
+							<p class="star-new__text">new</p>
+						</li>
+						<li class="burger-card">
+							<img
+								src="https://icodethis.com/images/jos_burger/burger_2.jpg"
+								alt=""
+								class="img burger-card__img"
+							/>
+							<div class="burger-card__text">
+								<p class="burger-card__type">Double Trouble</p>
+								<p class="burger-card__description">
+									Angus Beef burger with Gouda cheese and bacon in a sesame bun.
+								</p>
+							</div>
+						</li>
+						<li class="burger-card">
+							<img
+								src="https://icodethis.com/images/jos_burger/burger_3.jpg"
+								alt=""
+								class="img burger-card__img"
+							/>
+							<div class="burger-card__text">
+								<p class="burger-card__type">Juicy Jo</p>
+								<p class="burger-card__description">
+									Beef Burger with fried onion toped with ragu sauce in a rye
+									bun.
+								</p>
+							</div>
+						</li>
+						<li class="burger-card">
+							<img
+								src="https://icodethis.com/images/jos_burger/burger_4.jpg"
+								alt=""
+								class="img burger-card__img"
+							/>
+							<div class="burger-card__text">
+								<p class="burger-card__type">Crispy Chi</p>
+								<p class="burger-card__description">
+									Beef Burger with fried onion toped with ragu sauce in a rye
+									bun.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</article>
 			</section>
-			<section class="reviews wrapper">
-				<h2>Some reviews</h2>
-				<p class="primary-color max-width-800">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<ul class="review-cards fake-masonry">
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=14" alt="" class="img" />
-						</div>
-						<p class="user-name">UIDELI.COM</p>
-						<p class="user-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=31" alt="" class="img" />
-						</div>
-						<p class="user-name">Jessica from Eater.com</p>
-						<p class="user-text">
-							Accusantium doloremque laudantium, totam rem aperiam.
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=16" alt="" class="img" />
-						</div>
-						<p class="user-name">we love food</p>
-						<p class="user-text">Just in love with these burgers!</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=49" alt="" class="img" />
-						</div>
-						<p class="user-name">Andreea @eattwice</p>
-						<p class="user-text">
-							Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=38" alt="" class="img" />
-						</div>
-						<p class="user-name">just maria</p>
-						<p class="user-text">
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat.
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=31" alt="" class="img" />
-						</div>
-						<p class="user-name">Jessica from Eater.com</p>
-						<p class="user-text">
-							Accusantium doloremque laudantium, totam rem aperiam.
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=7" alt="" class="img" />
-						</div>
-						<p class="user-name">Mathew eats all</p>
-						<p class="user-text">
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium, totam rem aperiam.
-							<br />Just the best in town. Try it!
-						</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=16" alt="" class="img" />
-						</div>
-						<p class="user-name">we love food</p>
-						<p class="user-text">Just in love with these burgers!</p>
-					</li>
-					<li class="review-card">
-						<div class="user-avatar">
-							<img src="https://i.pravatar.cc/150?img=14" alt="" class="img" />
-						</div>
-						<p class="user-name">UIDELI.COM</p>
-						<p class="user-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</li>
-				</ul>
+			<section class="reviews | primary-100-background">
+				<div class="wrapper">
+					<h2>Some reviews</h2>
+					<p class="primary-color max-width-800">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<ul class="review-cards fake-masonry">
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=14"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">UIDELI.COM</p>
+							<p class="user-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=31"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">Jessica from Eater.com</p>
+							<p class="user-text">
+								Accusantium doloremque laudantium, totam rem aperiam.
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=16"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">we love food</p>
+							<p class="user-text">Just in love with these burgers!</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=49"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">Andreea @eattwice</p>
+							<p class="user-text">
+								Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+								labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat.
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=38"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">just maria</p>
+							<p class="user-text">
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=31"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">Jessica from Eater.com</p>
+							<p class="user-text">
+								Accusantium doloremque laudantium, totam rem aperiam.
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img src="https://i.pravatar.cc/150?img=7" alt="" class="img" />
+							</div>
+							<p class="user-name">Mathew eats all</p>
+							<p class="user-text">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam.
+								<br />Just the best in town. Try it!
+							</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=16"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">we love food</p>
+							<p class="user-text">Just in love with these burgers!</p>
+						</li>
+						<li class="review-card">
+							<div class="user-avatar">
+								<img
+									src="https://i.pravatar.cc/150?img=14"
+									alt=""
+									class="img"
+								/>
+							</div>
+							<p class="user-name">UIDELI.COM</p>
+							<p class="user-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
-		<footer class="primary-background">
+		<footer>
 			<ul class="image-grid">
 				<li class="footer-img hidden-on-mobile">
 					<img src="https://icodethis.com/images/jos_burger/footer_1.jpg""
