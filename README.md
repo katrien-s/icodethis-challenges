@@ -32,7 +32,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ---
 
-### Challenge 119 (unfinished)
+### Challenge 119
 
 ![](screenshots/119-jo-s-burger-event.jpg)
 

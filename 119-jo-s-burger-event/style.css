@@ -158,26 +158,26 @@ header {
 	display: flex;
 	align-items: start;
 	text-align: left;
-	gap: 1rem;
+	gap: 3rem;
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 }
 
-.hero-img {
-	rotate: -5deg;
-	margin-right: 1rem;
+.hero p {
+	max-width: 60ch;
 }
 
-h1 {
-	position: relative;
+.hero-img {
+	rotate: -2.5deg;
+	margin-right: 1rem;
 }
 
 .hero-svg {
 	position: absolute;
 	width: 125px;
 	height: 125px;
-	top: 15rem;
-	left: 48%;
+	top: 10rem;
+	left: 75%;
 	z-index: 15;
 }
 
@@ -190,10 +190,36 @@ h1 {
 	display: none;
 }
 
+@media (max-width: 70em) {
+	.hero-svg {
+		top: 0;
+		left: 75%;
+		width: 100px;
+		height: 100px;
+	}
+}
+
 @media (max-width: 60em) {
+	.hero {
+		min-height: 600px;
+		padding-bottom: 40px;
+	}
+
+	.hero p {
+		position: relative;
+		z-index: 1;
+		max-width: 40ch;
+	}
+
 	.mobile-img {
 		display: block;
 		margin: 1rem auto 2rem;
+		transform: rotate(-2.36deg);
+		position: absolute;
+		top: 160px;
+		right: 1rem;
+		width: 260px;
+		height: 260px;
 	}
 
 	.hero-img {
@@ -201,8 +227,8 @@ h1 {
 	}
 
 	.hero-svg {
-		top: 7.5rem;
-		left: 65%;
+		top: -20px;
+		left: 75%;
 		width: 80px;
 		height: 80px;
 	}
@@ -226,7 +252,7 @@ h1 {
 	.header-main-navigation .nav-list {
 		flex-direction: column;
 		gap: 2rem;
-		min-height: 100vh;
+		height: 600px;
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -272,13 +298,13 @@ h1 {
 
 .menu,
 .reviews {
-	padding-block: 80px;
+	padding-block: 50px;
 }
 
 /* Creator */
 
 .creator {
-	padding-top: 64px;
+	padding-top: 50px;
 }
 
 figure {
@@ -624,7 +650,7 @@ footer nav {
 		line-height: 1.1;
 	}
 
-  	.footer-main-navigation {
+	.footer-main-navigation {
 		flex-direction: row;
 		padding-top: 52px;
 	}
@@ -699,14 +725,25 @@ footer .btn {
 	padding-block: 12px;
 }
 
+@media (max-width: 40em) {
+	.hero .btn {
+		text-align: center;
+		margin-top: 242px;
+		width: 100%;
+	}
+}
+
 @media (min-width: 40em) {
 	.nav-btn {
 		display: none;
 	}
 }
 
-
 /* Utility */
+
+.position-rel {
+	position: relative;
+}
 
 .primary-400-background {
 	background-color: var(--clr-primary-400);
@@ -770,7 +807,7 @@ footer .btn {
 /* Animation */
 
 .marquee-section {
-	margin-block: 100px;
+	margin-top: 100px;
 	position: relative;
 }
 
