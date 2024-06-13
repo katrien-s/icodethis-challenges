@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 121
+
+![](screenshots/121-submissions.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/121-submissions)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/121-submissions)
+
+---
+
 ### Challenge 120
 
 ![](screenshots/120-sync-component.jpg)

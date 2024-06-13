@@ -1,0 +1,312 @@
+/* ----------------  */
+/* Custom Properties */
+/* ----------------  */
+
+:root {
+	--clr-900: 226 49% 17%;
+	--clr-800: 200 1% 55%;
+	--clr-500: 22 100% 51%;
+	--clr-400: 25 99% 64%;
+	--clr-200: 209, 56%, 92%;
+	--clr-100: 0, 0%, 100%;
+
+	--fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+	--fs-800: 3.5rem;
+	--fs-700: 1.75rem;
+	--fs-600: 1.5rem;
+	--fs-500: 1.25rem;
+	--fs-400: 1rem;
+	--fs-300: 0.875rem;
+	--fs-200: 0.75rem;
+
+	--ff-serif: 'Merriweather', serif;
+	--ff-sans: 'Noto Sans', sans-serif;
+}
+
+/* ----------------  */
+/* Reset             */
+/* ----------------  */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: 400;
+}
+
+body {
+	font-family: var(--ff-sans-normal);
+	font-size: var(--fs-400);
+	background-image: linear-gradient(
+		45deg,
+		hsl(var(--clr-200)),
+		hsl(var(--clr-100))
+	);
+	color: hsl(var(--clr-white));
+	line-height: 1.5;
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* -----------------  */
+/* Utility Classes    */
+/* -----------------  */
+
+/* General */
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.align-center {
+	align-items: center;
+}
+
+.margin-left-auto {
+	margin-left: auto;
+}
+
+.wrapper {
+	padding-inline: 2em;
+	margin-inline: auto;
+	max-width: 28rem;
+}
+
+/* Colors */
+
+.bg-accent {
+	background-image: linear-gradient(
+		45deg,
+		hsl(var(--clr-400)),
+		hsl(var(--clr-500))
+	);
+}
+.bg-white {
+	background-color: hsl(var(--clr-100));
+}
+
+.text-900 {
+	color: hsl(var(--clr-900));
+}
+.text-800 {
+	color: hsl(var(--clr-800));
+}
+.text-400 {
+	color: hsl(var(--clr-400));
+}
+.text-100 {
+	color: hsl(var(--clr-100));
+}
+
+/* Typography */
+
+.ff-serif {
+	font-family: var(--ff-serif);
+}
+.ff-sans {
+	font-family: var(--ff-sans);
+}
+
+.letter-spacing-1 {
+	letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+	letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+	letter-spacing: 2.35px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.fs-900 {
+	font-size: var(--fs-900);
+}
+.fs-800 {
+	font-size: var(--fs-800);
+}
+.fs-700 {
+	font-size: var(--fs-700);
+}
+.fs-600 {
+	font-size: var(--fs-600);
+}
+.fs-500 {
+	font-size: var(--fs-500);
+}
+.fs-400 {
+	font-size: var(--fs-400);
+}
+.fs-300 {
+	font-size: var(--fs-300);
+}
+.fs-200 {
+	font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600,
+.fs-500 {
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* ----------------  */
+/* Components        */
+/* ----------------  */
+
+section {
+	border-radius: 0.5rem;
+	margin-block: 0.75rem;
+	padding: 2.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap, 1rem);
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	aspect-ratio: 1/1;
+}
+
+/* ---------------------------  */
+/* Page Specific                */
+/* ---------------------------  */
+
+button {
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 100vw;
+	aspect-ratio: 1/1;
+	transition: all ease-in 500ms;
+}
+
+button span {
+	display: flex;
+	align-items: center;
+	padding: 0.25rem;
+}
+
+button span svg {
+	width: 1rem;
+	height: 1rem;
+	transition: fill ease-in 500ms;
+}
+
+button[data-accent] {
+	background-color: hsl(var(--clr-500));
+}
+
+button:hover,
+button:focus {
+	background-color: hsl(var(--clr-100));
+	border-color: hsl(var(--clr-500));
+}
+
+button:hover svg,
+button:focus svg {
+	fill: hsl(var(--clr-900));
+}
+
+.progress-bar,
+.progress-status {
+	height: 5px;
+	border-radius: 100vw;
+}
+
+.progress-bar {
+	width: 50%;
+	background-color: hsl(var(--clr-800) / 0.3);
+}
+
+.progress-status {
+	width: 22%;
+	background-color: hsl(var(--clr-500));
+}
