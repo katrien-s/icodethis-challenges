@@ -3,9 +3,125 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="app.js" defer></script>
-		<title>Document</title>
+		<title>Calendar Comps</title>
 	</head>
-	<body></body>
+	<body>
+		<main class="wrapper">
+			<!-- calendar -->
+			<section>
+				<div class="monthly-overview | flex">
+					<h1 class="month | fw-700 fs-600">October 2020</h1>
+					<div><button></button><button></button></div>
+				</div>
+				<table>
+					<caption align="top"></caption>
+					<thead>
+						<tr>
+							<th class="fw-700 fs-200">Mon</th>
+							<th class="fw-700 fs-200">Tue</th>
+							<th class="fw-700 fs-200">Wed</th>
+							<th class="fw-700 fs-200">Thu</th>
+							<th class="fw-700 fs-200">Fri</th>
+							<th class="fw-700 fs-200">Sat</th>
+							<th class="fw-700 fs-200">Sun</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-light">28</td>
+							<td class="text-light">29</td>
+							<td class="text-light">30</td>
+							<td>1</td>
+							<td>2</td>
+							<td class="bg-accent-01">3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td class="text-light">1</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- selection block -->
+			<section class="flex column">
+				<button type="button" data-selection>Today</button>
+				<button type="button" data-selection>This week</button>
+				<button type="button" data-selection>Next week</button>
+			</section>
+
+			<!-- day-detail -->
+			<section>
+				<div class="detail-selection">
+					<div class="detail-date">
+						<p>Oct</p>
+						<p>22</p>
+					</div>
+					<div class="detail-title">
+						<p>Y Oslo på Damsgård!</p>
+						<p>9:00am - 6:00pm</p>
+					</div>
+				</div>
+				<div class="users-collection | flex" style="--gap: 0.35rem">
+					<img
+						src="../000-profile-pictures/pexels-andrea-piacquadio-3769021.jpg"
+						alt=""
+						class="avatar"
+					/>
+					<img
+						src="../000-profile-pictures/pexels-joshua-mcknight-3290244.jpg"
+						alt=""
+						class="avatar"
+					/>
+					<img
+						src="../000-profile-pictures/pexels-mikhail-nilov-8220954.jpg"
+						alt=""
+						class="avatar"
+					/>
+					<button type="button" class="avatar | fs-200">+21</button>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

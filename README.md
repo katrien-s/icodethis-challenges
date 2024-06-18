@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 123
+
+![](screenshots/123-contraction-timer.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/123-contraction-timer)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/123-contraction-timer)
+
+---
+
 ### Challenge 121
 
 ![](screenshots/121-blog-comps.jpg)

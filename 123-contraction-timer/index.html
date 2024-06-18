@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+		<title>Contraction Timer</title>
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="flex align-items-center justify-content-sb">
+				<button type="button" data-ui>
+					<span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-arrow-left"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l14 0" />
+							<path d="M5 12l6 6" />
+							<path d="M5 12l6 -6" />
+						</svg>
+					</span>
+				</button>
+				<h1 class="fs-400 fw-600">Contraction Timer</h1>
+				<button type="button" data-ui>
+					<span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-bell"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+							/>
+							<path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+						</svg>
+					</span>
+				</button>
+			</div>
+			<div
+				class="flex column text-align-center margin-block-32"
+				style="--gap: 0.65rem"
+			>
+				<p class="timer | fs-700 fw-500">00:00:11</p>
+				<p class="fs-300">Time since last contractions</p>
+				<p class="fs-300 fw-600">7 min 32 sec</p>
+				<button type="button" data-timer>Stop timing</button>
+			</div>
+			<table class="fs-200">
+				<thead>
+					<tr>
+						<th class="fw-600 text-clr-500">Length</th>
+						<th class="fw-600 text-clr-500">Time apart</th>
+						<th class="fw-600 text-clr-500">Start & end time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6s</td>
+						<td>3 min 21 sec</td>
+						<td>4:49pm - 4:49pm</td>
+					</tr>
+					<tr>
+						<td>4s</td>
+						<td>16 min 22 sec</td>
+						<td>4:49pm - 4:49pm</td>
+					</tr>
+					<tr>
+						<td>6s</td>
+						<td>7 min 41 sec</td>
+						<td>4:49pm - 4:49pm</td>
+					</tr>
+					<tr>
+						<td>12s</td>
+						<td>21 min 01 sec</td>
+						<td>4:49pm - 4:49pm</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</body>
+</html>
