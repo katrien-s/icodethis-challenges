@@ -23,6 +23,24 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 125
+
+![](screenshots/125-job-list.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/125-job-list)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/125-job-list)
+
+---
+
+### Challenge 124
+
+![](screenshots/124-coming-soon.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/124-coming-soon)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/124-coming-soon)
+
+---
+
 ### Challenge 123
 
 ![](screenshots/123-contraction-timer.jpg)
