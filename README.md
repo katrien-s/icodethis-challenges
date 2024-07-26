@@ -23,6 +23,21 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 126
+
+![](screenshots/126-social-profile.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/126-social-profile)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/126-social-profile)
+
+### Useful resources
+
+Two resources I used to figure out how to do a grid of squares. I eventually took the CSS Tricks-approach.
+- [#179: A Grid of Squares](https://css-tricks.com/videos/179-a-grid-of-squares/)
+- [CSS grid square layout](https://stackoverflow.com/questions/54927180/css-grid-square-layout)
+
+--- 
+
 ### Challenge 125
 
 ![](screenshots/125-job-list.jpg)
