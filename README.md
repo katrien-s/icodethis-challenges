@@ -23,6 +23,17 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 127
+
+![](screenshots/127-accordion.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/127-accordion)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/127-accordion)
+
+### Useful resources
+
+-[Detecting the opening or closing of a details element](https://stackoverflow.com/questions/7363117/detecting-the-opening-or-closing-of-a-details-element)
+
 ### Challenge 126
 
 ![](screenshots/126-social-profile.jpg)
@@ -33,10 +44,11 @@ Unless noted otherwise, the building of the exercises is done with:
 ### Useful resources
 
 Two resources I used to figure out how to do a grid of squares. I eventually took the CSS Tricks-approach.
+
 - [#179: A Grid of Squares](https://css-tricks.com/videos/179-a-grid-of-squares/)
 - [CSS grid square layout](https://stackoverflow.com/questions/54927180/css-grid-square-layout)
 
---- 
+---
 
 ### Challenge 125
 

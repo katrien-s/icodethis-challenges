@@ -1,0 +1,292 @@
+/* ----------------  */
+/* Custom Properties */
+/* ----------------  */
+
+:root {
+	--clr-900: 230 35% 7%;
+	--clr-300: 231 77% 90%;
+	--clr-100: 0 0% 100%;
+
+	--clr-accent-01: 30 100% 70%;
+	--clr-accent-02: 242 100% 85%;
+	--clr-accent-03: 352 100% 85%;
+
+	--fs-900: 1.25rem;
+	--fs-400: 0.9375rem;
+
+	--ff-sans-normal: 'Merriweather Sans', sans-serif;
+}
+
+@media (min-width: 45em) {
+	:root {
+		--fs-900: 1.5rem;
+		--fs-400: 1rem;
+	}
+}
+
+/* ----------------  */
+/* Reset             */
+/* ----------------  */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: 400;
+}
+
+body {
+	font-family: var(--ff-sans-normal);
+	font-size: var(--fs-400);
+	background-color: hsl(var(--clr-dark));
+	color: hsl(var(--clr-white));
+	line-height: 1.5;
+	min-height: 100vh;
+	place-content: center;
+	padding-inline: 1rem;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* -----------------  */
+/* Utility Classes    */
+/* -----------------  */
+
+/* General */
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.grid {
+	display: grid;
+	gap: var(--gap, 1rem);
+}
+
+.items-center {
+	align-items: center;
+}
+
+.place-content-center {
+	place-content: center;
+}
+
+.d-block {
+	display: block;
+}
+
+.flow > * {
+	margin-top: var(--flow-space, 1rem);
+}
+
+.flow--space-small {
+	--flow-space: 0.75rem;
+}
+
+.wrapper {
+	padding: 2em;
+	margin-inline: auto;
+	max-width: 550px;
+	background-color: hsl(var(--clr-100));
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
+}
+
+/* Colors */
+
+.bg-900 {
+	background-color: hsl(var(--clr-900));
+}
+.bg-100 {
+	background-color: hsl(var(--clr-100));
+}
+
+.text-900 {
+	color: hsl(var(--clr-900));
+}
+.text-100 {
+	color: hsl(var(--clr-100));
+}
+
+.example-component {
+	background-color: hsl(var(--clr-light) / 0.2);
+}
+
+/* Typography */
+
+.ff-serif {
+	font-family: var(--ff-serif);
+}
+.ff-sans-cond {
+	font-family: var(--ff-sans-cond);
+}
+.ff-sans-normal {
+	font-family: var(--ff-sans-normal);
+}
+
+.letter-spacing-1 {
+	letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+	letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+	letter-spacing: 2.35px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.fs-900 {
+	font-size: var(--fs-900);
+}
+.fs-800 {
+	font-size: var(--fs-800);
+}
+.fs-700 {
+	font-size: var(--fs-700);
+}
+.fs-600 {
+	font-size: var(--fs-600);
+}
+.fs-500 {
+	font-size: var(--fs-500);
+}
+.fs-400 {
+	font-size: var(--fs-400);
+}
+.fs-300 {
+	font-size: var(--fs-300);
+}
+.fs-200 {
+	font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+	line-height: 1.1;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+/* ----------------  */
+/* Components        */
+/* ----------------  */
+
+/* ---------------------------  */
+/* Page Specific Background     */
+/* ---------------------------  */
+
+/* ----------------  */
+/* Layout            */
+/* ----------------  */
+
+.icon-tabler {
+	width: 2rem;
+	height: 2rem;
+}
+
+li {
+	padding-left: 3rem;
+}
+
+details {
+	transition: all 0.5s ease;
+	padding: 1.25rem 0.75rem;
+	border-radius: 8px;
+}
+
+details[open] span {
+	font-weight: 700;
+}
+
+details[open] .icon-tabler {
+	transform: rotate(45deg);
+}
+
+details:nth-of-type(1) {
+	background-color: hsl(var(--clr-accent-01) / 0.2);
+	border-left: 6px solid hsl(var(--clr-accent-01));
+}
+
+details:nth-of-type(2) {
+	background-color: hsl(var(--clr-accent-02) / 0.2);
+	border-left: 6px solid hsl(var(--clr-accent-02));
+}
+
+details:nth-of-type(3) {
+	background-color: hsl(var(--clr-accent-03) / 0.2);
+	border-left: 6px solid hsl(var(--clr-accent-03));
+}
