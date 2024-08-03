@@ -23,6 +23,13 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 128
+
+![](screenshots/128-blog-post.jpg)
+
+- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/128-blog-post)
+- [Live URL](https://graficdoctor.github.io/icodethis-challenges/128-blog-post)
+
 ### Challenge 127
 
 ![](screenshots/127-accordion.jpg)
@@ -32,7 +39,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Useful resources
 
--[Detecting the opening or closing of a details element](https://stackoverflow.com/questions/7363117/detecting-the-opening-or-closing-of-a-details-element)
+- [Detecting the opening or closing of a details element](https://stackoverflow.com/questions/7363117/detecting-the-opening-or-closing-of-a-details-element)
 
 ### Challenge 126
 
