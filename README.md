@@ -23,19 +23,33 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 130
+
+![](screenshots/130-dashboard-ui.jpg)
+
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/130-dashboard-ui)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/130-dashboard-ui)
+
+### Challenge 129
+
+![](screenshots/128-blog-post.jpg)
+
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/128-blog-post)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/128-blog-post)
+
 ### Challenge 128
 
 ![](screenshots/128-blog-post.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/128-blog-post)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/128-blog-post)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/128-blog-post)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/128-blog-post)
 
 ### Challenge 127
 
 ![](screenshots/127-accordion.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/127-accordion)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/127-accordion)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/127-accordion)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/127-accordion)
 
 ### Useful resources
 
@@ -45,8 +59,8 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ![](screenshots/126-social-profile.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/126-social-profile)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/126-social-profile)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/126-social-profile)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/126-social-profile)
 
 ### Useful resources
 
@@ -61,8 +75,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/125-job-list.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/125-job-list)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/125-job-list)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/125-job-list)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/125-job-list)
 
 ---
 
@@ -70,8 +84,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/124-coming-soon.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/124-coming-soon)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/124-coming-soon)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/124-coming-soon)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/124-coming-soon)
 
 ---
 
@@ -79,8 +93,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/123-contraction-timer.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/123-contraction-timer)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/123-contraction-timer)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/123-contraction-timer)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/123-contraction-timer)
 
 ---
 
@@ -88,8 +102,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/121-blog-comps.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/121-blog-comps)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/121-blog-comps)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/121-blog-comps)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/121-blog-comps)
 
 ---
 
@@ -97,8 +111,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/120-sync-component.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/120-sync-component)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/120-sync-component)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/120-sync-component)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/120-sync-component)
 
 ---
 
@@ -106,8 +120,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/119-jo-s-burger-event.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/119-jo-s-burger-event)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/119-jo-s-burger-event)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/119-jo-s-burger-event)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/119-jo-s-burger-event)
 
 ---
 
@@ -115,8 +129,8 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/118-pricing-table.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/118-pricing-table)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/118-pricing-table)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/118-pricing-table)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/118-pricing-table)
 
 **Useful Resources**
 
@@ -128,12 +142,12 @@ Two resources I used to figure out how to do a grid of squares. I eventually too
 
 ![](screenshots/117-movie-card.jpg)
 
-- [Code URL](https://github.com/graficdoctor/icodethis-challenges/tree/main/117-movie-card)
-- [Live URL](https://graficdoctor.github.io/icodethis-challenges/117-movie-card)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/117-movie-card)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/117-movie-card)
 
 ---
 
 ## Author
 
 - Website - [Katrien S](https://www.katriens.be)
-- Twitter - [@graficdoctor](https://www.twitter.com/graficdoctor)
+- Twitter - [@katrien-s](https://www.twitter.com/katrien-s)
