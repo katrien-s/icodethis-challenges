@@ -32,10 +32,10 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 129
 
-![](screenshots/128-blog-post.jpg)
+![](screenshots/129-countdown.jpg)
 
-- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/128-blog-post)
-- [Live URL](https://katrien-s.github.io/icodethis-challenges/128-blog-post)
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/129-countdown)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/129-countdown)
 
 ### Challenge 128
 
