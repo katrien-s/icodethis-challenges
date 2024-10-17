@@ -23,6 +23,13 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 131
+
+![](screenshots/131-website-comps.jpg)
+
+- [Code URL](https://github.com/katrien-s/icodethis-challenges/tree/main/131-website-comps)
+- [Live URL](https://katrien-s.github.io/icodethis-challenges/131-website-comps)
+
 ### Challenge 130
 
 ![](screenshots/130-dashboard-ui.jpg)
