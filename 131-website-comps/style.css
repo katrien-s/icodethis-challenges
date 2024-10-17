@@ -291,23 +291,42 @@ a:focus {
 	stroke: hsl(var(--clr-accent-400));
 }
 
-.card-options li:hover .icon-tabler,
-.icon-tabler:hover {
+a:hover .icon-tabler,
+.icon-tabler:hover,
+.card-options li:hover .icon-tabler {
 	stroke: hsl(var(--clr-900));
 }
 
+.card-container {
+	display: grid;
+	gap: 2rem;
+}
+
+.card-cta {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+}
+
+@media (min-width: 23.6em) {
+	.card-cta {
+		flex-direction: row;
+		align-items: center;
+    margin-top: 1.5rem;
+	}
+}
+
 @media (min-width: 35em) {
+	.card-container {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	}
+
 	.card-options ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 		gap: 2.5rem;
 	}
-}
-
-.card-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	gap: 2rem;
 }
 
 button {
