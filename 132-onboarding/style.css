@@ -285,7 +285,7 @@ select {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
-  width: min(350px, calc(100vw - 2em));
+	width: min(350px, calc(100vw - 2em));
 	text-align: center;
 }
 
@@ -301,20 +301,27 @@ select {
 	background-color: transparent;
 }
 
+.naked-btn {
+	color: hsl(var(--clr-900) / 0.4);
+}
+
 .accent-btn {
 	background-color: hsl(var(--clr-accent-400));
+	color: hsl(var(--clr-100));
 	padding: 0.5rem;
 	border-bottom-right-radius: 10px;
-	display: grid;
-	place-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accent-btn.standalone {
+	padding: 0.5rem 1.25rem;
+	margin-inline: auto;
 }
 
 .icon-tabler {
 	stroke: hsl(var(--clr-100));
-}
-
-.naked-btn {
-	color: hsl(var(--clr-900) / 0.4);
 }
 
 /* ---------------------------  */
@@ -324,3 +331,10 @@ select {
 /* ----------------  */
 /* Layout            */
 /* ----------------  */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-block: 2rem;
+}
