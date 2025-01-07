@@ -3,27 +3,39 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="app.js" defer></script>
 		<title>Music Player</title>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="player">
-        <div class="player-content">
-          <!-- <div class="player-bar">
-          </div> -->
-					<div class="player-display">
+		<div class="wrapper flow">
+			<div class="player flow">
+				<div class="player-content">
+					<div class="player-bar">
+						<!-- playlist -->
 						<p>Playing Now</p>
+						<!-- addsongs -->
+					</div>
+					<div class="player-display flow flow--space-big">
 						<div class="player-display-song">
 							<p id="player-song-title">Someone Lived this</p>
-							<p id="player-song-artist">Hans Zimmer</p>
+							<p>
+								<span>-</span>
+								<span id="player-song-artist">Hans Zimmer</span>
+								<span>-</span>
+							</p>
 						</div>
 						<div id="player-album-art">
 							<img src="bladerunner-ost.jpg" alt="song cover art" />
 						</div>
 						<div class="player-display-duration">
-              <span class="song-duration-visual"></span>
+							<span class="song-duration-visual"></span>
 							<p class="player-song-duration">
 								<span class="song-duration-played">3.47</span>
 								<span class="song-duration-total">5:35</span>
@@ -101,30 +113,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="playlist">
-				<!-- <div class="playlist-bar">
-				</div> -->
-				<ul id="playlist-songs">
+			<div class="playlist flow flow--space-big">
+				<ul id="playlist-songs" class="flow">
 					<li class="playlist-song">
-						<button class="playlist-song-info">
-							<span class="playlist-song-title">Sapper's Tree</span>
-							<span class="playlist-song-artist">Hans Zimmer</span>
-							<span class="playlist-song-duration">3:37</span>
-						</button>
+						<span class="playlist-song-title">Sapper's Tree</span>
+						<span class="playlist-song-duration">3:37</span>
 					</li>
 					<li class="playlist-song">
-						<button class="playlist-song-info">
-							<span class="playlist-song-title">Sapper's Tree</span>
-							<span class="playlist-song-artist">Hans Zimmer</span>
-							<span class="playlist-song-duration">3:37</span>
-						</button>
+						<span class="playlist-song-title">Sapper's Tree</span>
+						<span class="playlist-song-duration">3:37</span>
 					</li>
 					<li class="playlist-song">
-						<button class="playlist-song-info">
-							<span class="playlist-song-title">Sapper's Tree</span>
-							<span class="playlist-song-artist">Hans Zimmer</span>
-							<span class="playlist-song-duration">3:37</span>
-						</button>
+						<span class="playlist-song-title">Sapper's Tree</span>
+						<span class="playlist-song-duration">3:37</span>
 					</li>
 				</ul>
 			</div>
